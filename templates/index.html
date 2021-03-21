@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgb(10, 93, 218); color: blanchedalmond; background-position: center;">
+    <center>
+    <div style="position: relative;;background-color:rgb(185, 176, 176);margin-top: 100px;opacity: 0.9;color: black; min-width: 100px;max-width: 600px;">
+     <h1> <b>Assignment 1  </b></h1>
+            <form action="{{ url_for('predict1')}}" method="post">
+            <h2>(Predicting the text as Person name or city name)</h2>
+            <input id="text" name="text" required="required" placeholder="Enter a text" autocomplete="off"><br>
+            <br><br><button id="sub" type="submit "><b>PREDICT</b></button>
+            <h2 style="color: red;">{{predicted_class}}</h2>
+        </form>
+</center>
+   
+
+</body>
